@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(48, 48, 48);
+        }
+
+
+        .parents {
+            background-color: #ddd;
+            width: 300px;
+            margin: 0 auto;
+            /* 일어나지 않는 조건 */
+            /* padding: 1px;
+            border: 1px solid transparent; */
+
+            /* 해결방법 */
+            /* overflow: hidden; */
+        }
+
+
+        .children {
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+            font-size: 50px;
+            text-align: center;
+            line-height: 200px;
+            /* 인접해 있는 요소 상하단 마진 병합 현상 */
+            margin: 50px;
+
+            /* 이것도 문제 있음 자식 사이 100px로 떨어짐 */
+            /* display: inline-block; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 왜 일어나야하는지, 일어나지 않는 조건, 어떻게 해결해야 하는지,  -->
+    <div class="parents">
+        <!-- 부모와 자식이 떨어지기 떄문 -->
+        <!-- kfdklsdfnskfnls -->
+        <div class="children">A</div>
+        <div class="children">B</div>
+    </div>
+</body>
+
+</html>
